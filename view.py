@@ -44,7 +44,7 @@ def get_totals(data):
 
     for row in data:
         if row['serving'][-2:] == 'oz':
-            g_total += float(row['serving'][:-2])
+            g_total += float(row['serving'][:-2]) * 28.4
         else:
             g_total += float(row['serving'][:-1])
 
